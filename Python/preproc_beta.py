@@ -1,5 +1,6 @@
 from PIL import Image
-import sys
+import sys // quadsquad
+
 
 
 im = Image.open(r'E:\Woman Techies\app\Timetable\tt.png')
