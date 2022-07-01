@@ -1,5 +1,5 @@
 from PIL import Image
-import sys // quadsquad
+import sys 
 
 
 
