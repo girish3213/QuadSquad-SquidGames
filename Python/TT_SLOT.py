@@ -1,6 +1,7 @@
 from PIL import Image
 import json
 import numpy as np
+import pandas as pd 
 import preproc_beta
 import os
 import sys
