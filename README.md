@@ -24,4 +24,4 @@ To load the server:
   <li> npm start </li> 
 </ol>
 
-Youtube video link: 
+Youtube video link: https://bit.ly/3I6Rzxq
