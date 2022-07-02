@@ -12,6 +12,8 @@
   
   
 <b> A single dimensional JSON array containing all slot info for all days of the week, one after the other. For each day, There are 13 values for each day as there are 13 slots ( TH+LAB ).
+
+
 1 = Filled slot
 0 = Empty slot
 
