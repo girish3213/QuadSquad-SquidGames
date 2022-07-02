@@ -11,7 +11,7 @@
   </body>
   
   
-<b> A one-dimensional JSON array containing all slots' info for all days of the week, one after the other. For each day, there are 13 values, as there are 13 time slots everyday (TH + LAB)
+<b> A single dimensional JSON array containing all slot info for all days of the week, one after the other. For each day, There are 13 values for each day as there are 13 slots ( TH+LAB ).
 1 = Filled slot
 0 = Empty slot
 
@@ -24,4 +24,4 @@ To load the server:
   <li> npm start </li> 
 </ol>
 
-Youtube video link: https://bit.ly/3I6Rzxq
+Youtube video link: <em>https://bit.ly/3I6Rzxq</em>
