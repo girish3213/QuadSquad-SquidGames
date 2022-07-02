@@ -16,11 +16,11 @@ r = 190
 for i in range(d[0]):
 	for j in range(d[1]):
 		p = im.getpixel((i,j))
-		if p[0] <= 200 and p[1] <= 200 and p[2] <= 200: #preprocessing 1
+		if p[0] <= 200 and p[1] <= 200 and p[2] <= 200: 
 			out.putpixel((i,j), (0,0,0))
-		elif p[1] > 200 and p[2] > 200 and p[2] >= p[1]: #preprocessing 2
+		elif p[1] > 200 and p[2] > 200 and p[2] >= p[1]: 
 			out.putpixel((i,j), (0,0,200))
-		else: #preprocessing 3 (monotonizing 2)
+		else: 
 			dg = dist((203,254,51), p)
 			dy = dist((255,255,204), p)
 			if dg < dy:
