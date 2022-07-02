@@ -1,7 +1,6 @@
 from PIL import Image
 import json
 import numpy as np
-import pandas as pd 
 import preproc_beta
 import os
 import sys
@@ -28,7 +27,7 @@ empty slot = (255,255,0)
 '''
 cols = [(0,255,0),(255,255,0)]
 
-start = [] ##coordinates of the starting point
+start = [] 
 
 i=0
 while i < dim[0]:
@@ -37,8 +36,8 @@ while i < dim[0]:
         rgb = tt.getpixel((i,j))
         if rgb == (255,255,0) or rgb == (0,255,0):
             start = [i,j]
-            i = dim[0] #breaking the outer loop
-            break #breaking the inner loop
+            i = dim[0] 
+            break
         j = j + 1
     i = i + 1
 
@@ -65,10 +64,6 @@ try:
 			while tt.getpixel((i,j)) not in cols:
 				i = i + 1
 
-    	#printing
-    	#for x in range(13):
-    	#    print(int(slot_state[b][a]), end=' ')
-    	#print('\n')
 
 		if b == 13:
 			break
@@ -96,7 +91,7 @@ for x in range(14 - cd[0]):
         i = i - 1
     slot_state[0] = tr
 
-##rotating the array
+
 slot_state = np.rot90(slot_state, 2, (0,1))
 
 a = 0
@@ -109,5 +104,4 @@ while a < 13:
 
 os.remove("ttpxt.png")
 print(json.dumps(final_list))
-# x = input("\nGive any input to continue...")
-# exit()
+
